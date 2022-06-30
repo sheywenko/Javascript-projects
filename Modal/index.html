@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/index.js" defer></script>
+    <title>Modal Window</title>
+  </head>
+  <body>
+    <button class="btn btn--open">Open Modal</button>
+    <div class="modal hidden">
+      <button class="btn--close">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <h2>Javascript</h2>
+      <p>
+        JavaScript is a text-based programming language used both on the
+        client-side and server-side that allows you to make web pages
+        interactive. Where HTML and CSS are languages that give structure and
+        style to web pages, JavaScript gives web pages interactive elements that
+        engage a user. Common examples of JavaScript that you might use every
+        day include the search box on Amazon, a news recap video embedded on The
+        New York Times, or refreshing your Twitter feed.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

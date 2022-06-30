@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Open sans", sans-serif;
+}
+.hidden {
+  display: none;
+}
+.btn--open {
+  padding: 1.4rem 2.4rem;
+  background-color: #a52a2a;
+  color: #fff;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.btn--open:hover,
+.btn--open:active {
+  background-color: #8a1818;
+}
+
+.btn--close {
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+  font-size: 2.2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn--close:hover,
+.btn--close:active {
+  color: #a52a2a;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+.modal {
+  position: absolute;
+  background-color: #f3f3f3;
+  padding: 3rem 2rem 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  max-width: 100%;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.modal h2 {
+  margin-bottom: 0.9rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a52a2a;
+  font-size: 20px;
+}
+.modal p {
+  margin-bottom: 0.9rem;
+  text-align: justify;
+  font-size: 18px;
+}
+@media (max-width: 550px) {
+  .modal {
+    width: 25rem;
+  }
+}
+@media (max-width: 450px) {
+  .modal {
+    width: 22rem;
+  }
+}
